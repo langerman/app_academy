@@ -7,10 +7,9 @@ console.log(5 * 3 + 2); // => 17
 console.log(2 + 3 * 5); // => 17
 console.log((2 + 3) * 5); // => 25
 
-// JavaSCript outputs a single value, e.g.
+// JavaScript outputs a single value, e.g.
 console.log(1 + 1)
 console.log(2.5 - 2)
 console.log(3 * 4)
 
-// semicolon at end of line is only necessary when running multiple lines of code on one line
-
+console.log("bootcamp".indexOf("o")); // => 1 ,2?
