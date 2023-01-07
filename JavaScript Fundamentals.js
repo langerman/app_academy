@@ -14,10 +14,19 @@ console.log(3 * 4)
 
 console.log("bootcamp".indexOf("o")); // => 1, only shows first found!
 
-// Prints 1 and returns undefined
+// Prints 1 and returns undefined when called without a parameter.
 function sayNumber(number) {
     console.log(number);
   }
   
  sayNumber(1);
 
+function average(number1, number2) {
+  let sum = number1 + number2;
+  return sum;
+  // Anything under the `return sum` statement will NOT be executed.
+  console.log("this will not run");
+  return false;
+}
+
+average(2, 7); // Returns 9
