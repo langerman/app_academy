@@ -71,11 +71,21 @@ hello("Sting"); // prints "Hello, Sting" */
 
 
 
-function divideByThree(num) {
+/* function divideByThree(num) {
   let numByThree = num/3;
   return numByThree;
 }
 
 console.log(divideByThree(9)); // => 3.0
 console.log(divideByThree(15)); // => 5.0
-console.log(divideByThree(98)); // => 32.666666666666664
+console.log(divideByThree(98)); // => 32.666666666666664 */
+
+
+
+function whisper(str) {
+  let whisperedStr = "..." + str.toLowerCase();
+  return whisperedStr;
+}
+
+console.log(whisper("Hey Buddy")); // => "...hey buddy..."
+console.log(whisper("YEA! that was fun")); // => "...yea! that was fun..."
