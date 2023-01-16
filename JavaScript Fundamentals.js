@@ -1,4 +1,4 @@
-// single operations
+/* // single operations
 console.log(-4 * 1.5); // => -6
 console.log(-4 + 1.0); // => -3
 
@@ -29,4 +29,18 @@ function average(number1, number2) {
   return false;
 }
 
-average(2, 7); // Returns 9
+average(2, 7); // Returns 9 */
+
+function isCool(string) {
+  let coolSentence = string + " is cool!"
+  console.log(coolSentence)
+  return coolSentence
+}
+
+// Call the above function passing in the below arguments:
+// Music
+// JavaScript
+// The world
+isCool("Music");
+isCool("JavaScript");
+isCool("The world");
