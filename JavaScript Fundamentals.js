@@ -61,10 +61,21 @@ console.log(averageOfTwo(2, 7.5)); // => 4.75 */
 
 
 
-function hello(str) {
+/* function hello(str) {
   console.log("Hello, " + str);
 }
 
 hello("cat"); // prints "Hello, cat"
 hello("Helen"); // prints "Hello, Helen"
-hello("Sting"); // prints "Hello, Sting"
+hello("Sting"); // prints "Hello, Sting" */
+
+
+
+function divideByThree(num) {
+  let numByThree = num/3;
+  return numByThree;
+}
+
+console.log(divideByThree(9)); // => 3.0
+console.log(divideByThree(15)); // => 5.0
+console.log(divideByThree(98)); // => 32.666666666666664
