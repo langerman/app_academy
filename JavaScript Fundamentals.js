@@ -104,10 +104,25 @@ console.log(averageOfFour(1, 2, 3, 4)); // => 2.5 */
 
 
 
-function yell(str) {
+/* function yell(str) {
   let yelledStr = str.toUpperCase();
   return yelledStr;
 }
 
 console.log(yell("I want to go to the store")); // => "I WANT TO GO TO THE STORE!!!"
-console.log(yell("Time to program")); // => "TIME TO PROGRAM!!!"
+console.log(yell("Time to program")); // => "TIME TO PROGRAM!!!" */
+
+
+
+function echo(string) {
+  // use .toUpperCase() to echoLoud
+  let echoLoud = string.toUpperCase();
+  // use .toLowerCase() to echoLow
+  let echoLow = string.toLowerCase();
+  // return output
+  return console.log(echoLoud + " ... " + string + " ... " + echoLow);
+}
+
+echo("Mom!"); // => prints "MOM! ... Mom! ... mom!"
+echo("hey"); // => prints "HEY ... hey ... hey"
+echo("JUMp"); // => prints "JUMP ... JUMp ... jump"
