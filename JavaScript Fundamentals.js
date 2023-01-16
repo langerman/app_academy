@@ -50,11 +50,21 @@ isCool("The world"); */
 
 
 
-function averageOfTwo(num1, num2) {
+/* function averageOfTwo(num1, num2) {
   let averageTwoNum = (num1 + num2) / 2;
   return averageTwoNum;
 }
 
 console.log(averageOfTwo(3, 7)); // => 5.0
 console.log(averageOfTwo(16, 5)); // => 10.5
-console.log(averageOfTwo(2, 7.5)); // => 4.75
+console.log(averageOfTwo(2, 7.5)); // => 4.75 */
+
+
+
+function hello(str) {
+  console.log("Hello, " + str);
+}
+
+hello("cat"); // prints "Hello, cat"
+hello("Helen"); // prints "Hello, Helen"
+hello("Sting"); // prints "Hello, Sting"
