@@ -14,7 +14,7 @@ console.log(3 * 4)
 
 console.log("bootcamp".indexOf("o")); // => 1, only shows first found!
 
-// Prints 1 and returns undefined when called without a parameter.
+// Prints 1 and returns undefined.
 function sayNumber(number) {
     console.log(number);
   }
