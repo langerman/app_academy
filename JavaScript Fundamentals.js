@@ -82,10 +82,22 @@ console.log(divideByThree(98)); // => 32.666666666666664 */
 
 
 
-function whisper(str) {
+/* function whisper(str) {
   let whisperedStr = "..." + str.toLowerCase();
   return whisperedStr;
 }
 
 console.log(whisper("Hey Buddy")); // => "...hey buddy..."
-console.log(whisper("YEA! that was fun")); // => "...yea! that was fun..."
+console.log(whisper("YEA! that was fun")); // => "...yea! that was fun..." */
+
+
+
+function averageOfFour(num1, num2, num3, num4) {
+  let sum = num1 + num2 + num3 + num4;
+  let average = sum / 4;
+  return average;
+}
+
+console.log(averageOfFour(10, 10, 15, 5)); // => 10
+console.log(averageOfFour(3, 10, 11, 4)); // => 7
+console.log(averageOfFour(1, 2, 3, 4)); // => 2.5
