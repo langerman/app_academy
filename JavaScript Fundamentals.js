@@ -31,7 +31,10 @@ function average(number1, number2) {
 
 average(2, 7); // Returns 9 */
 
-function isCool(string) {
+
+
+
+/* function isCool(string) {
   let coolSentence = string + " is cool!"
   console.log(coolSentence)
   return coolSentence
@@ -43,4 +46,15 @@ function isCool(string) {
 // The world
 isCool("Music");
 isCool("JavaScript");
-isCool("The world");
+isCool("The world"); */
+
+
+
+function averageOfTwo(num1, num2) {
+  let averageTwoNum = (num1 + num2) / 2;
+  return averageTwoNum;
+}
+
+console.log(averageOfTwo(3, 7)); // => 5.0
+console.log(averageOfTwo(16, 5)); // => 10.5
+console.log(averageOfTwo(2, 7.5)); // => 4.75
