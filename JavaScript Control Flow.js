@@ -64,13 +64,23 @@
 
 // Loops
 
-let array = [0, 1, 2];
-let index = 0;
+// let array = [0, 1, 2];
+// let index = 0;
 
-while (index < array.length) {
-  console.log(
-    "Both the index and the current array position are " + array[index]);
-  index++;
-}
+// while (index < array.length) {
+//   console.log(
+//     "Both the index and the current array position are " + array[index]);
+//   index++;
+// }
+
+
+
+A for loop can be broken down into three sections:
+
+The initial expression which will be run once at the beginning of the loop.
+The condition which is checked every time the loop is run. If this condition is true the loop will run again. If this condition is false the loop will end.
+The loopEnd expression which will be run at the end of the loop before checking the condition again.
+for (<initial expression>;<condition>;<loopEnd expression>)
+
 
 
