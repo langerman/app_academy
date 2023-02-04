@@ -96,23 +96,45 @@
 
 
 
-// these two do the exact same thing!
-function forLoopDoubler (array) {
-    // it is convention to shorten index to just i in most cases
-    for (let i = 0; i < array.length; i++) {
-      array[i] = array[i] * 2;
-    }
-    return array;
-  };
+// // these two do the exact same thing!
+// function forLoopDoubler (array) {
+//     // it is convention to shorten index to just i in most cases
+//     for (let i = 0; i < array.length; i++) {
+//       array[i] = array[i] * 2;
+//     }
+//     return array;
+//   };
   
-  function whileLoopDoubler (array) {
-    let i = 0;
-    while (i < array.length) {
-      array[i] = array[i] * 2;
-      i++;
-    }
-    return array;
-  };
+//   function whileLoopDoubler (array) {
+//     let i = 0;
+//     while (i < array.length) {
+//       array[i] = array[i] * 2;
+//       i++;
+//     }
+//     return array;
+//   };
   
-  forLoopDoubler([1, 2, 3]); // => [2,4,6]
-  whileLoopDoubler([1, 2, 3]); //=> [2,4,6]
+//   forLoopDoubler([1, 2, 3]); // => [2,4,6]
+//   whileLoopDoubler([1, 2, 3]); //=> [2,4,6]
+
+
+
+function logBetween(lowNum, highNum) {
+    for (let i = lowNum; i <= highNum; i += 1) {
+      console.log(i);
+    }
+  }
+  
+  // Examples:
+  logBetween(-1, 2); // prints out:
+  // -1
+  // 0
+  // 1
+  // 2
+  
+  logBetween(14, 6); // => prints nothing
+  
+  logBetween(4, 6); // prints out:
+  // 4
+  // 5
+  // 6
