@@ -119,22 +119,50 @@
 
 
 
-function logBetween(lowNum, highNum) {
-    for (let i = lowNum; i <= highNum; i += 1) {
-      console.log(i);
-    }
-  }
+// function logBetween(lowNum, highNum) {
+//     for (let i = lowNum; i <= highNum; i += 1) {
+//       console.log(i);
+//     }
+//   }
   
-  // Examples:
-  logBetween(-1, 2); // prints out:
-  // -1
+//   // Examples:
+//   logBetween(-1, 2); // prints out:
+//   // -1
+//   // 0
+//   // 1
+//   // 2
+  
+//   logBetween(14, 6); // => prints nothing
+  
+//   logBetween(4, 6); // prints out:
+//   // 4
+//   // 5
+//   // 6
+
+
+
+// function printFives(max) {
+//     for (let i = 0; i < max; i += 5) {
+//       console.log(i);
+//     }
+//   }
+  
+  // function printFives(max) {
+  //   let i = 0;
+  //   while (i < max) {
+  //     if (i % 5 === 0) {
+  //       console.log(i);
+  //     }
+  //     i++;
+  //   }
+  // }
+  // Example:
+  
+  printFives(20) // prints out:
   // 0
-  // 1
-  // 2
-  
-  logBetween(14, 6); // => prints nothing
-  
-  logBetween(4, 6); // prints out:
-  // 4
   // 5
-  // 6
+  // 10
+  // 15
+
+
+
