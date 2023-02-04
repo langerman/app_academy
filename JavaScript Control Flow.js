@@ -158,7 +158,7 @@
   // }
   // Example:
   
-  printFives(20) // prints out:
+//   printFives(20) // prints out:
   // 0
   // 5
   // 10
@@ -166,25 +166,47 @@
 
 
 
-function logBetweenStepper(min, max, step) {
-    for (let i = min; i < max; i += step) {
+// function logBetweenStepper(min, max, step) {
+//     for (let i = min; i < max; i += step) {
+//         console.log(i);
+//     }
+// }
+
+// // Examples:
+// logBetweenStepper(5, 9, 1); // prints out:
+// // 5
+// // 6
+// // 7
+// // 8
+// // 9
+
+
+// logBetweenStepper(-10, 15, 5)  // prints out:
+// // -10
+// // -5
+// // 0
+// // 5
+// // 10
+// // 15
+
+
+
+function fizzBuzz(max) {
+    for (let i = 0; i < max; i += 1) {
+      if (i % 3 === 0 && i % 5 !== 0) {
         console.log(i);
+      } else if (i % 5 === 0 && i % 3 !== 0) {
+        console.log(i);
+      }
     }
-}
-
-// Examples:
-logBetweenStepper(5, 9, 1); // prints out:
-// 5
-// 6
-// 7
-// 8
-// 9
-
-
-logBetweenStepper(-10, 15, 5)  // prints out:
-// -10
-// -5
-// 0
-// 5
-// 10
-// 15
+  }
+  // Examples:
+  
+  fizzBuzz(20); // prints out:
+  // 3
+  // 5
+  // 6
+  // 9
+  // 10
+  // 12
+  // 18
