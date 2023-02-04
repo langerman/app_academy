@@ -75,12 +75,44 @@
 
 
 
-A for loop can be broken down into three sections:
+// A for loop can be broken down into three sections:
 
-The initial expression which will be run once at the beginning of the loop.
-The condition which is checked every time the loop is run. If this condition is true the loop will run again. If this condition is false the loop will end.
-The loopEnd expression which will be run at the end of the loop before checking the condition again.
-for (<initial expression>;<condition>;<loopEnd expression>)
+// The initial expression which will be run once at the beginning of the loop.
+// The condition which is checked every time the loop is run. If this condition is true the loop will run again. If this condition is false the loop will end.
+// The loopEnd expression which will be run at the end of the loop before checking the condition again.
+// for (<initial expression>;<condition>;<loopEnd expression>)
 
 
 
+// let testString = "testing";
+
+// // We can use the testString's length as our condition!
+// // Since we know the testString's index starts at 0
+// // and our index starts at 0 we can access each letter:
+// for (let index = 0; index < testString.length; index += 1) {
+//   let letter = testString[index];
+//   console.log(letter);
+// }
+
+
+
+// these two do the exact same thing!
+function forLoopDoubler (array) {
+    // it is convention to shorten index to just i in most cases
+    for (let i = 0; i < array.length; i++) {
+      array[i] = array[i] * 2;
+    }
+    return array;
+  };
+  
+  function whileLoopDoubler (array) {
+    let i = 0;
+    while (i < array.length) {
+      array[i] = array[i] * 2;
+      i++;
+    }
+    return array;
+  };
+  
+  forLoopDoubler([1, 2, 3]); // => [2,4,6]
+  whileLoopDoubler([1, 2, 3]); //=> [2,4,6]
