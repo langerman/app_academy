@@ -213,10 +213,26 @@
 
 
 
-function combineArray(array1, array2) {
-    let newArray = array1.concat(array2);
-    return newArray;
+// function combineArray(array1, array2) {
+//     let newArray = array1.concat(array2);
+//     return newArray;
+// }
+
+// console.log(combineArray([1, 2], [3, 4])); // => [1, 2, 3, 4]
+// console.log(combineArray([17, 5], [6, 7]));  // => [17, 5, 6, 7]
+
+
+
+
+let doubleArray = [];
+function doubler(numbers) {
+    for (i = 0; i < numbers.length; i++){
+        let oldNum = numbers[i];
+        let newNum = oldNum * 2;
+        doubleArray = doubleArray.concat(newNum);
+    }
+    return doubleArray;
 }
 
-console.log(combineArray([1, 2], [3, 4])); // => [1, 2, 3, 4]
-console.log(combineArray([17, 5], [6, 7]));  // => [17, 5, 6, 7]
+console.log(doubler([1, 2, 3, 4])); // => [2, 4, 6, 8]
+console.log(doubler([7, 1, 8])); // => [14, 2, 16]
