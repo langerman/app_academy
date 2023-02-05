@@ -191,22 +191,32 @@
 
 
 
-function fizzBuzz(max) {
-    for (let i = 0; i < max; i += 1) {
-      if (i % 3 === 0 && i % 5 !== 0) {
-        console.log(i);
-      } else if (i % 5 === 0 && i % 3 !== 0) {
-        console.log(i);
-      }
-    }
-  }
-  // Examples:
+// function fizzBuzz(max) {
+//     for (let i = 0; i < max; i += 1) {
+//       if (i % 3 === 0 && i % 5 !== 0) {
+//         console.log(i);
+//       } else if (i % 5 === 0 && i % 3 !== 0) {
+//         console.log(i);
+//       }
+//     }
+//   }
+//   // Examples:
   
-  fizzBuzz(20); // prints out:
-  // 3
-  // 5
-  // 6
-  // 9
-  // 10
-  // 12
-  // 18
+//   fizzBuzz(20); // prints out:
+//   // 3
+//   // 5
+//   // 6
+//   // 9
+//   // 10
+//   // 12
+//   // 18
+
+
+
+function combineArray(array1, array2) {
+    let newArray = array1.concat(array2);
+    return newArray;
+}
+
+console.log(combineArray([1, 2], [3, 4])); // => [1, 2, 3, 4]
+console.log(combineArray([17, 5], [6, 7]));  // => [17, 5, 6, 7]
