@@ -224,15 +224,28 @@
 
 
 
-let doubleArray = [];
-function doubler(numbers) {
-    for (i = 0; i < numbers.length; i++){
-        let oldNum = numbers[i];
-        let newNum = oldNum * 2;
-        doubleArray = doubleArray.concat(newNum);
-    }
-    return doubleArray;
-}
+// let doubleArray = [];
+// function doubler(numbers) {
+//     for (i = 0; i < numbers.length; i++){
+//         let oldNum = numbers[i];
+//         let newNum = oldNum * 2;
+//         doubleArray = doubleArray.concat(newNum);
+//     }
+//     return doubleArray;
+// }
 
-console.log(doubler([1, 2, 3, 4])); // => [2, 4, 6, 8]
-console.log(doubler([7, 1, 8])); // => [14, 2, 16]
+// console.log(doubler([1, 2, 3, 4])); // => [2, 4, 6, 8]
+// console.log(doubler([7, 1, 8])); // => [14, 2, 16]
+
+
+
+function countVowels(word) {
+    let vowels = ["a", "e", "i", "o", "u"];
+    let count = 0;
+    for (let i = 0; i < word.length; i++) {
+        if (vowels.includes(word[i].toLowerCase())) {
+            count++;
+        }
+    }
+    return count;
+}
